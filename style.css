@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "font-1";
+    src: url(./assets/Tourney-Black.ttf);
+}
+
+body {
+    background: url(./assets/F1\ image.jpg) fixed bottom/cover;
+    height: 100vh;
+}
+
+
+
+h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: darkorange;
+    text-shadow: 2px 1px 2px darkgoldenrod;
+    text-align: center;
+    word-spacing: 5px;
+    font-family: "font-1", cursive;
+}
+
+main {
+    background: whitesmoke;
+    width: 85%;
+    margin: 0 auto;
+    padding: 1px 10px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 19px 0px #333;
+}
