@@ -53,6 +53,12 @@ main {
   font-size: x-large;
 }
 
+.comp{
+    display: flex;
+    flex-direction: raw;
+    flex-wrap: wrap;
+}
+
 .start-text {
   margin-left: 20px;
   font-family: "font-2", cursive;
