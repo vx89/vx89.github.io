@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Site de vx89</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <script src="./assets/js/index.js"></script>
+    
   </head>
 
   <body>
@@ -20,9 +20,7 @@
         <div class="start-text">
           <p>
             Yo! Je m'appelle Joshua alias <i>vx89</i>, <i>NeoFury</i> ou encore
-            <i>Solofury</i>. J'ai 15ans et je suis apprenti développeur web. Je
-            précise que ce n'est qu'un passe temps pour moi je ne compte pas
-            m'investir réellement dans ce domaine.
+            <i>Solofury</i>. J'ai 15ans et je suis apprenti développeur web. J'ai commencé le développement informatique en juillet 2021. Je maitrise actuellement le langage HTML ainsi que CSS. Je suis en train d'apprendre le JavaScript.
           </p>
         </div>
       </div>
@@ -30,11 +28,9 @@
       <div class="competences">
         <h2>Mes compétences :</h2>
         <ul>
-          <li>
-            <img src="./assets/photo/logo html.png" alt="" height="150" />
-          </li>
-          <li><img src="./assets/photo/logo css.png" alt="" height="150" /></li>
-          <li><img src="./assets/photo/logo js.png" alt="" height="150" /></li>
+          <li class="imghtml" data-tilt><img src="./assets/photo/logo html.png" alt="" height="200" /></li>
+          <li class="imgcss" data-tilt><img src="./assets/photo/logo css.png" alt="" height="200" /></li>
+          <li class="imgjs" data-tilt><img src="./assets/photo/logo js.png" alt="" height="170" /></li>
         </ul>
       </div>
 
@@ -52,6 +48,8 @@
             <input type="text" id="firstname" placeholder="Prénom" />
 
             <input type="text" id="surname" placeholder="Nom" />
+
+            <input type="text" id="mail" placeholder="Mail" />
 
             <div class="commentary input-radio">
               <input type="radio" name="type" id="commentary" />
@@ -109,5 +107,9 @@
         /></a>
       </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.1/vanilla-tilt.js" integrity="sha512-g7P3hXMgoVKE0NI6hsCz2pVqUaSbvAkoC5QEOG3o7DyvwZclAKgZNbT3HRHlUBEEtmaChd52UO0KcLhsDrQfmQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+    VanillaTilt.init(document.querySelectorAll("#imgRot"));
+  </script>
   </body>
 </html>

@@ -77,21 +77,27 @@ ul {
 }
 
 li {
+  text-align: center;
   list-style-type: none;
-  height: 180px;
-  width: 180px;
+  height: 320px;
+  width: 230px;
   border-radius: 10px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin: 40px;
-  transition: 0.7s;
+  margin: 20px;
   transform: scale(1.1);
 }
 
-li:hover {
+
+
+.imghtml:hover, .imgcss:hover, .imgjs:hover {
   background-color: bisque;
-  transition: 0.7s;
+}
+
+
+li:hover img{
+  transform: scale(1.1);
 }
 
 .form-container {
@@ -104,21 +110,14 @@ li:hover {
   text-align: center;
 }
 
-img {
-  transition: 0.7s;
-}
-
-img:hover {
-  transform: scale(1.1);
-  transition: 0.7s;
-}
 
 form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
     "i1 i2"
+    "ma ma"
     "u1 u2"
     "u3 u4"
     "ta ta"
@@ -140,6 +139,10 @@ textarea {
 
 #surname {
   grid-area: i2;
+}
+
+#mail {
+  grid-area: ma;
 }
 
 .input-radio {
@@ -204,7 +207,7 @@ footer {
   padding: 10px;
 }
 
-/* @media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
     .form-container {
         display: block;
     }
@@ -215,14 +218,19 @@ footer {
     form {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas: 
           'i1'
           'i2'
+          'ma'
+          'u1'
+          'u2'
+          'u3'
+          'u4'
           'ta'
           'bt';
     }
     h2 {
         text-align: center;
     }
-} */
+}
