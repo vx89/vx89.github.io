@@ -1,0 +1,228 @@
+@font-face {
+  font-family: "font-1";
+  src: url(/assets/polices/Tourney-Black.ttf);
+}
+
+@font-face {
+  font-family: "font-2";
+  src: url(/assets/polices/IndieFlower-Regular.ttf);
+}
+
+@font-face {
+  font-family: "font-3";
+  src: url(/assets/polices/Teko-Light.ttf);
+}
+
+body {
+  background: url(/assets/photo/F1\ image.jpg) fixed bottom/cover;
+  height: 200vh;
+  max-height: 200vh;
+  margin: 0;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: darkorange;
+  text-shadow: 2px 1px 2px darkgoldenrod;
+  text-align: center;
+  word-spacing: 5px;
+  font-family: "font-1", cursive;
+}
+
+main {
+  background: rgba(245, 245, 245, 0.89);
+  width: 85%;
+  min-height: 900px;
+  margin: 0 auto;
+  padding: 1px 10px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 19px 0px #333;
+}
+
+.start,
+.competences,
+.form {
+  width: 90%;
+  margin: 20px auto;
+  padding: 0px 10px;
+  border: 2px solid rgba(255, 235, 205, 0.658);
+  border-radius: 10px;
+  background-color: lavenderblush;
+  font-family: "font-3", cursive;
+  font-size: x-large;
+}
+
+.start-text {
+  margin-left: 20px;
+  font-family: "font-2", cursive;
+  font-size: medium;
+}
+
+p::first-letter {
+  font-size: 2rem;
+}
+
+h2 {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+li {
+  list-style-type: none;
+  height: 180px;
+  width: 180px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px;
+  transition: 0.7s;
+  transform: scale(1.1);
+}
+
+li:hover {
+  background-color: bisque;
+  transition: 0.7s;
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  padding: 20px;
+}
+
+.img {
+  text-align: center;
+}
+
+img {
+  transition: 0.7s;
+}
+
+img:hover {
+  transform: scale(1.1);
+  transition: 0.7s;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "i1 i2"
+    "u1 u2"
+    "u3 u4"
+    "ta ta"
+    "bt bt";
+}
+
+input,
+textarea {
+  margin: 5px;
+  height: 50px;
+  border: 1px solid rgba(255, 235, 205, 0.658);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+#firstname {
+  grid-area: i1;
+}
+
+#surname {
+  grid-area: i2;
+}
+
+.input-radio {
+  display: flex;
+  align-items: center;
+}
+
+.commentary {
+  grid-area: u1;
+}
+
+.idea {
+  grid-area: u2;
+}
+
+.projects {
+  grid-area: u3;
+}
+
+.other {
+  grid-area: u4;
+}
+
+textarea {
+  grid-area: ta;
+  resize: none;
+}
+
+input[type="submit"] {
+  grid-area: bt;
+  cursor: pointer;
+  background: white;
+}
+
+input[type="submit"]:hover {
+  background: bisque;
+  transition: 0.5s;
+}
+
+footer {
+  width: 100%;
+  background: rgba(245, 225, 188, 0.897);
+  margin: 150px 0;
+  height: 150px;
+}
+
+.contact {
+  padding: 10px;
+  text-align: center;
+  position: relative;
+}
+
+#discord {
+  position: absolute;
+  left: 42%;
+  padding: 10px;
+}
+
+#github {
+  position: absolute;
+  right: 42%;
+  padding: 10px;
+}
+
+/* @media screen and (max-width: 1000px) {
+    .form-container {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    form {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+          'i1'
+          'i2'
+          'ta'
+          'bt';
+    }
+    h2 {
+        text-align: center;
+    }
+} */
