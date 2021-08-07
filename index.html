@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Site de vx89</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
-    
   </head>
 
   <body>
@@ -20,7 +19,10 @@
         <div class="start-text">
           <p>
             Yo! Je m'appelle Joshua alias <i>vx89</i>, <i>NeoFury</i> ou encore
-            <i>Solofury</i>. J'ai 15ans et je suis apprenti développeur web. J'ai commencé le développement informatique en juillet 2021. Je maitrise actuellement le langage HTML ainsi que CSS. Je suis en train d'apprendre le JavaScript.
+            <i>Solofury</i>. J'ai 15ans et je suis apprenti développeur web.
+            J'ai commencé le développement informatique en juillet 2021. Je
+            maitrise actuellement le langage HTML ainsi que CSS. Je suis en
+            train d'apprendre le JavaScript.
           </p>
         </div>
       </div>
@@ -28,9 +30,41 @@
       <div class="competences">
         <h2>Mes compétences :</h2>
         <ul>
-          <li class="imghtml" data-tilt><img src="./assets/photo/logo html.png" alt="" height="200" /></li>
-          <li class="imgcss" data-tilt><img src="./assets/photo/logo css.png" alt="" height="200" /></li>
-          <li class="imgjs" data-tilt><img src="./assets/photo/logo js.png" alt="" height="170" /></li>
+          <li
+            class="imghtml"
+            style="transform-style: preserve-3d; transform: perspective(000px)"
+            data-tilt
+            data-tilt-reverse="true"
+          >
+            <img
+              style="transform: translateZ(20px)"
+              src="./assets/photo/logo html.png"
+              alt=""
+              height="200"
+            />
+          </li>
+          <li
+            class="imgcss"
+            data-tilt-reverse="true"
+            style="transform-style: preserve-3d"
+            data-tilt
+            data-tilt-reverse="true"
+          >
+            <img
+              style="transform: translateZ(20px)"
+              src="./assets/photo/logo css.png"
+              alt=""
+              height="200"
+            />
+          </li>
+          <li class="imgp" data-tilt data-tilt-reverse="true">
+            <div class="imgjs">
+              <img src="./assets/photo/logo js.png" alt="" height="170" />
+            </div>
+            <div class="imgjsbg">
+              <p class="img-text">En cours d'apprentissage</p>
+            </div>
+          </li>
         </ul>
       </div>
 
@@ -51,6 +85,12 @@
 
             <input type="text" id="mail" placeholder="Mail" />
 
+            <input
+              type="text"
+              id="othercontact"
+              placeholder="Autre moyen de contact"
+            />
+
             <div class="commentary input-radio">
               <input type="radio" name="type" id="commentary" />
               <label for="commentary">Commentaires</label>
@@ -67,16 +107,6 @@
               <input type="radio" name="type" id="other" />
               <label for="other">Autre</label>
             </div>
-
-            <!-- <span>En quoi consiste votre message ?</span>
-                    <input type="radio" name="type" id="commentary">
-                    <label for="commentary">Commentaires</label>
-                    <input type="radio" name="type" id="idea">
-                    <label for="idea">Idées</label>
-                    <input type="radio" name="type" id="projects">
-                    <label for="projects">Projets</label>
-                    <input type="radio" name="type" id="other">
-                    <label for="other">Autre</label> -->
 
             <textarea
               cols="30"
@@ -107,9 +137,14 @@
         /></a>
       </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.1/vanilla-tilt.js" integrity="sha512-g7P3hXMgoVKE0NI6hsCz2pVqUaSbvAkoC5QEOG3o7DyvwZclAKgZNbT3HRHlUBEEtmaChd52UO0KcLhsDrQfmQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.1/vanilla-tilt.js"
+      integrity="sha512-g7P3hXMgoVKE0NI6hsCz2pVqUaSbvAkoC5QEOG3o7DyvwZclAKgZNbT3HRHlUBEEtmaChd52UO0KcLhsDrQfmQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script type="text/javascript">
-    VanillaTilt.init(document.querySelectorAll("#imgRot"));
-  </script>
+      VanillaTilt.init(document.querySelectorAll("#imgRot"));
+    </script>
   </body>
 </html>

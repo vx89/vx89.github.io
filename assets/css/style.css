@@ -63,6 +63,10 @@ p::first-letter {
   font-size: 2rem;
 }
 
+p {
+  line-height: 22px;
+}
+
 h2 {
   margin-top: 10px;
   margin-bottom: 0;
@@ -89,14 +93,54 @@ li {
   transform: scale(1.1);
 }
 
+.imgp {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+}
 
+.imgjs {
+  position: absolute;
+  text-align: center;
+  height: 320px;
+  width: 230px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
 
-.imghtml:hover, .imgcss:hover, .imgjs:hover {
+.imgp:hover .imgjsbg {
+  text-align: center;
+  height: 320px;
+  width: 230px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  background: rgba(61, 61, 61, 0.555);
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.img-text {
+  color: white;
+}
+
+.imgjsbg {
+  display: flex;
+}
+
+.imghtml:hover,
+.imgcss:hover,
+.imgjs:hover {
   background-color: bisque;
 }
 
-
-li:hover img{
+li:hover img {
   transform: scale(1.1);
 }
 
@@ -110,14 +154,13 @@ li:hover img{
   text-align: center;
 }
 
-
 form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
     "i1 i2"
-    "ma ma"
+    "ma mc"
     "u1 u2"
     "u3 u4"
     "ta ta"
@@ -143,6 +186,10 @@ textarea {
 
 #mail {
   grid-area: ma;
+}
+
+#othercontact {
+  grid-area: mc;
 }
 
 .input-radio {
@@ -195,42 +242,42 @@ footer {
   position: relative;
 }
 
-#discord {
-  position: absolute;
-  left: 42%;
-  padding: 10px;
-}
-
+#discord,
 #github {
-  position: absolute;
-  right: 42%;
-  padding: 10px;
+  display: inline-flex;
+  padding: 20px;
 }
 
 @media screen and (max-width: 1000px) {
-    .form-container {
-        display: block;
-    }
-
+  .form-container {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 550px) {
-    form {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: 
-          'i1'
-          'i2'
-          'ma'
-          'u1'
-          'u2'
-          'u3'
-          'u4'
-          'ta'
-          'bt';
-    }
-    h2 {
-        text-align: center;
-    }
+  form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "i1"
+      "i2"
+      "ma"
+      "mc"
+      "u1"
+      "u2"
+      "u3"
+      "u4"
+      "ta"
+      "bt";
+  }
+  h2 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h2 {
+    font-size: 30px;
+  }
 }
